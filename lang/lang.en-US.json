@@ -17,7 +17,8 @@
             },
             "welcomeMember": {
                 "title": "Welcome to {{GUILD_NAME}}",
-                "description": "I'd like to welcome {{USER_MENTION}} to {{GUILD_NAME}}."
+                "description": "I'd like to welcome {{USER_MENTION}} . . .\nto my SOUL SOCIETY.",
+                "image": "https://media1.tenor.com/m/VdixkA4ki9IAAAAC/aizen.gif"
             },
             "helpContactSupport": {
                 "title": "Help - {{REF:helpOptions.contactSupport}}",

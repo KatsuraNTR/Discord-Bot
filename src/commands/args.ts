@@ -1,6 +1,6 @@
 import { APIApplicationCommandBasicOption, ApplicationCommandOptionType } from 'discord.js';
 
-import { DevCommandName, HelpOption, InfoOption } from '../enums/index.js';
+import { DevCommandName, HelpOption, InfoOption, YoutubeCommandName } from '../enums/index.js';
 import { Language } from '../models/enum-helpers/index.js';
 import { Lang } from '../services/index.js';
 
@@ -56,5 +56,31 @@ export class Args {
                 value: InfoOption.TRANSLATE,
             },
         ],
+    };
+    public static readonly YOUTUBE_COMMAND: APIApplicationCommandBasicOption = {
+        name: Lang.getRef('arguments.command', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('arguments.command'),
+        description: Lang.getRef('argDescs.youtubeCommand', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('argDescs.youtubeCommand'),
+        type: ApplicationCommandOptionType.String,
+        choices: [
+            {
+                name: Lang.getRef('youtubeCommandNames.subscribe', Language.Default),
+                name_localizations: Lang.getRefLocalizationMap('youtubeCommandNames.subscribe'),
+                value: YoutubeCommandName.SUBSCRIBE,
+            },
+            {
+                name: Lang.getRef('youtubeCommandNames.unsubscribe', Language.Default),
+                name_localizations: Lang.getRefLocalizationMap('youtubeCommandNames.unsubscribe'),
+                value: YoutubeCommandName.UNSUBSCRIBE,
+            },
+        ],
+    };
+    public static readonly YOUTUBE_CHANNEL_ID: APIApplicationCommandBasicOption = {
+        name: Lang.getRef('arguments.option', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('arguments.option'),
+        description: Lang.getRef('argDescs.youtubeChannelId', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('argDescs.youtubeChannelId'),
+        type: ApplicationCommandOptionType.String,
     };
 }

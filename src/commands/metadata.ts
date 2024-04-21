@@ -69,6 +69,27 @@ export const ChatCommandMetadata: {
         dm_permission: true,
         default_member_permissions: undefined,
     },
+    YOUTUBE: {
+        type: ApplicationCommandType.ChatInput,
+        name: Lang.getRef('chatCommands.youtube', Language.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.youtube'),
+        description: Lang.getRef('commandDescs.youtube', Language.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.youtube'),
+        dm_permission: true,
+        default_member_permissions: PermissionsBitField.resolve([
+            PermissionFlagsBits.Administrator,
+        ]).toString(),
+        options: [
+            {
+                ...Args.YOUTUBE_COMMAND,
+                required: true,
+            },
+            {
+                ...Args.YOUTUBE_CHANNEL_ID,
+                required: true,
+            }
+        ],
+    },
 };
 
 export const MessageCommandMetadata: {

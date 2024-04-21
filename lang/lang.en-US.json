@@ -58,6 +58,12 @@
             "test": {
                 "description": "Test command works!"
             },
+            "youtubeSubscribed": {
+                "description": "You are now subscribed to the YouTube channel!"
+            },
+            "youtubeUnsubscribed": {
+                "description": "You are now unsubscribed from the YouTube channel!"
+            },
             "viewDateJoined": {
                 "description": "{{TARGET}} joined on {{DATE}}!"
             },
@@ -196,7 +202,8 @@
             "dev": "dev",
             "help": "help",
             "info": "info",
-            "test": "test"
+            "test": "test",
+            "youtube": "youtube"
         },
         "userCommands": {
             "viewDateJoined": "View Date Joined"
@@ -212,12 +219,15 @@
             "dev": "Developer use only.",
             "help": "Find help or contact support.",
             "info": "View bot info.",
-            "test": "Run the test command."
+            "test": "Run the test command.",
+            "youtube": "Manage YouTube subscriptions."
         },
         "argDescs": {
             "devCommand": "Command.",
             "helpOption": "Option.",
-            "infoOption": "Option."
+            "infoOption": "Option.",
+            "youtubeCommand": "Command.",
+            "youtubeChannelId": "YouTube channel ID."
         },
         "fields": {
             "commands": "Commands",
@@ -285,6 +295,14 @@
         "infoOptions": {
             "about": "About",
             "translate": "Translate"
+        },
+        "youtubeCommandNames": {
+            "subscribe": "Subscribe",
+            "unsubscribe": "Unsubscribe"
+        },
+        "youtubeCommandReplies": {
+            "newVideo": "**{{channelName}}** just uploaded a new video!\n{{url}}",
+            "newScheduledVideo": "**{{channelName}}** has an upcoming live stream!\n{{url}}"
         },
         "yesNo": {
             "yes": "Yes",

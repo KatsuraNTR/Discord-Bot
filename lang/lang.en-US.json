@@ -18,7 +18,7 @@
             "welcomeMember": {
                 "title": "Welcome to {{GUILD_NAME}}",
                 "description": "I'd like to welcome {{USER_MENTION}} to {{GUILD_NAME}}.",
-                "image": "https://tenor.com/view/roboco-san-roboco-hololive-maid-cat-ears-gif-23230267"
+                "image": "https://tenor.com/bJDpT.gif"
             },
             "helpContactSupport": {
                 "title": "Help - {{REF:helpOptions.contactSupport}}",

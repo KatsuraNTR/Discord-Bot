@@ -5,6 +5,7 @@
         "token": "<DISCORD_BOT_TOKEN>",
         "intents": [
             "Guilds",
+            "GuildMembers",
             "GuildMessages",
             "GuildMessageReactions",
             "DirectMessages",
@@ -26,6 +27,12 @@
             "ThreadMemberManager": 0,
             "VoiceStateManager": 0
         }
+    },
+    "mongodb": {
+        "uri": ""
+    },
+    "youtube": {
+        "apiKey": ""
     },
     "api": {
         "port": 3001,

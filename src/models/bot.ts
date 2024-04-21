@@ -17,6 +17,7 @@ import {
 } from 'discord.js';
 import { createRequire } from 'node:module';
 
+import { YoutubeNotifier } from './youtube/index.js';
 import {
     ButtonHandler,
     CommandHandler,
@@ -52,6 +53,7 @@ export class Bot {
 
     public async start(): Promise<void> {
         this.registerListeners();
+        this.setNotifiers();
         await this.login(this.token);
     }
 
@@ -73,6 +75,12 @@ export class Bot {
         this.client.rest.on(RESTEvents.RateLimited, (rateLimitData: RateLimitData) =>
             this.onRateLimit(rateLimitData)
         );
+    }
+
+    private setNotifiers(): void {
+        if (Config.mongodb.uri && Config.youtube.apiKey) {
+            new YoutubeNotifier(this.client, Config.mongodb.uri, Config.youtube.apiKey).start();
+        }
     }
 
     private async login(token: string): Promise<void> {

@@ -1,7 +1,7 @@
 {
     "bot": {
-        "name": "My Bot",
-        "author": "My Name"
+        "name": "Friend A",
+        "author": "Katsura"
     },
     "emojis": {
         "yes": "✅",
@@ -17,7 +17,7 @@
         "refresh": "🔄"
     },
     "colors": {
-        "default": "#0099ff",
+        "default": "#2c2b6d",
         "success": "#00ff83",
         "warning": "#ffcc66",
         "error": "#ff4a4a"

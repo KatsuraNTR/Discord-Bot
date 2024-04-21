@@ -301,8 +301,8 @@
             "unsubscribe": "Unsubscribe"
         },
         "youtubeCommandReplies": {
-            "newVideo": "**{{channelName}}** just uploaded a new video!\n{{url}}",
-            "newScheduledVideo": "**{{channelName}}** has an upcoming live stream!\n{{url}}"
+            "newVideo": "**{{channelTitle}}** just uploaded a new video!\n{{url}}",
+            "newScheduledVideo": "**{{channelTitle}}** has an upcoming live stream!\n{{url}}"
         },
         "yesNo": {
             "yes": "Yes",

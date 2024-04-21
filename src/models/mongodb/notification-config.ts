@@ -1,5 +1,7 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
+let Config = require('../../../config/config.json');
+
 interface INotificationConfig {
     guildId: string;
     notificationChannelId: string;
@@ -68,6 +70,6 @@ const notificationConfigSchema = new Schema<INotificationConfig>(
 );
 
 export const NotificationConfig = mongoose.model<INotificationConfigModel>(
-    'NotificationConfig',
+    'NotificationConfig_' + Config.client.id,
     notificationConfigSchema
 );

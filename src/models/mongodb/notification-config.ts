@@ -1,5 +1,7 @@
 import mongoose, { Document, Schema } from 'mongoose';
+import { createRequire } from 'node:module';
 
+const require = createRequire(import.meta.url);
 let Config = require('../../../config/config.json');
 
 interface INotificationConfig {

@@ -24,7 +24,8 @@
         "updatedServerCount": "Updated server count. Connected to {SERVER_COUNT} total servers.",
         "updatedServerCountSite": "Updated server count on '{BOT_SITE}'.",
         "guildJoined": "Guild '{GUILD_NAME}' ({GUILD_ID}) joined.",
-        "guildLeft": "Guild '{GUILD_NAME}' ({GUILD_ID}) left."
+        "guildLeft": "Guild '{GUILD_NAME}' ({GUILD_ID}) left.",
+        "memberJoined": "Member '{MEMBER_NAME}' ({MEMBER_ID}) joined guild '{GUILD_NAME}' ({GUILD_ID})."
     },
     "warn": {
         "managerNoShards": "No shards to spawn."
@@ -44,6 +45,7 @@
         "updatedServerCountSite": "An error occurred while updating the server count on '{BOT_SITE}'.",
         "guildJoin": "An error occurred while processing a guild join.",
         "guildLeave": "An error occurred while processing a guild leave.",
+        "memberJoin": "An error occurred while processing a member join.",
         "message": "An error occurred while processing a message.",
         "reaction": "An error occurred while processing a reaction.",
         "command": "An error occurred while processing a command interaction.",

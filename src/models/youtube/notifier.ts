@@ -5,7 +5,7 @@ import { ClientUtils, YoutubeUtils } from '../../utils/index.js';
 import { NotificationConfig } from '../mongodb/index.js';
 
 export class YoutubeNotifier {
-    updateInterval = 60000;
+    updateInterval = 300000;
     subscriptions = [];
 
     constructor(

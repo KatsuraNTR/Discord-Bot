@@ -17,7 +17,7 @@
         "refresh": "🔄"
     },
     "colors": {
-        "default": "#76dfff",
+        "default": "#ffffff",
         "success": "#00ff83",
         "warning": "#ffcc66",
         "error": "#ff4a4a"

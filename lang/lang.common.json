@@ -1,7 +1,7 @@
 {
     "bot": {
-        "name": "My Bot",
-        "author": "My Name"
+        "name": "Murasaki Shion",
+        "author": "Katsura"
     },
     "emojis": {
         "yes": "✅",
@@ -17,7 +17,7 @@
         "refresh": "🔄"
     },
     "colors": {
-        "default": "#0099ff",
+        "default": "#cebfff",
         "success": "#00ff83",
         "warning": "#ffcc66",
         "error": "#ff4a4a"
